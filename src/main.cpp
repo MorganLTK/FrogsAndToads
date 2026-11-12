@@ -48,5 +48,5 @@ namespace FrogToad {
 }
 
 int main() {
-    return FrogToad::runConsole(); // Change to runRaylib() for Parts 1–3.
+    return FrogToad::runRaylib(); // Change to runRaylib() for Parts 1–3.
 }

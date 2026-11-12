@@ -1,5 +1,6 @@
 #pragma once
 #include <array>
+#include <algorithm>
 
 namespace FrogToad {
     /** @brief Owns the board state, enforces movement rules, and calculates game status. */
