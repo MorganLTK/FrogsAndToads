@@ -17,7 +17,7 @@ namespace FrogToad {
         std::optional<int> hoveredCell = BoardLayout::cellAt(GetMousePosition());
 
         //board cells
-        for (int index{ 0 }; index < BoardModel::BoardSize; ++index) {
+        for (int index{ 0 }; index < BoardModel::BoardSize; index++) {
 
             //cell rectangle from BoardLayout
             Rectangle cell = BoardLayout::cellRect(index);   
@@ -63,7 +63,7 @@ namespace FrogToad {
             DrawRectangleLinesEx(cell, 2, BLACK);
 
             //cell number
-            DrawText(TextFormat("%d", index + 1), cell.x + 35, cell.y + cell.height + 5, 15, GRAY);
+            DrawText(TextFormat("%i", index + 1), cell.x + 35, cell.y + cell.height + 5, 15, GRAY);
         }
 
         
