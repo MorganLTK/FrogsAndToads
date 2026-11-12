@@ -25,7 +25,7 @@ namespace FrogToad {
         }
 
         // calculate which cell the point is inside
-        for (int index = 0; index < BoardModel::BoardSize; ++index) {
+        for (int index = 0; index < BoardModel::BoardSize; index++) {
 
             if (CheckCollisionPointRec(point, cellRect(index))) {
                 return index;
